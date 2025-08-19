@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <p>Simplify your day, boost your productivity.</p>
+        <button onclick="scrollToChoosePlan()">Get Started</button>
+    </header>
+    <main>
+        <section class="features_section reveal" id="features">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="50px" viewBox="0 0 24 24" width="50px" fill="#4FACFE"><rect fill="none" height="24" width="24"/><path d="M22,7h-9v2h9V7z M22,15h-9v2h9V15z M5.54,11L2,7.46l1.41-1.41l2.12,2.12l4.24-4.24l1.41,1.41L5.54,11z M5.54,19L2,15.46 l1.41-1.41l2.12,2.12l4.24-4.24l1.41,1.41L5.54,19z"/></svg>
+                    <h3>easy task managment</h3>
+                    <p>Create,edit,and organize tasks effortlessly.</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 0 24 24" width="50px" fill="#4FACFE"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42z"/></svg>
+                    <h3>smart reminders</h3>
+                    <p>Never miss a deadline with timely notifications</p>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#4FACFE"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
+                    <h3>collaboration</h3>
+                    <p>Share tasks and projects with your team.</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="usersSay reveal" id="reviews">
+            <h2>what our users say</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p>TaskFlow has completely changed the way i work it's simple and powerful.</p>
+                    <h3>Sarah L.</h3>
+                </div>
+                <div class="review">
+                    <p>I love the reminders! I never forget an important task anymore.</p>
+                    <h3>James K.</h3>
+                </div>
+                <div class="review">
+                    <p>Perfect for our team projects. Collaboration is smooth and easy.</p>
+                    <h3>Maria G.</h3>
+                </div>
+            </div>
+        </section>
+        <section class="choosePlan reveal" id="choosePlan">
+            <h2>choose your plan</h2>
+            <div class="plans">
+                <div class="plan">
+                    <h3>free</h3>
+                    <p><span>$0</span>/month</p>
+                    <ul>
+                        <li>Basic task managment</li>
+                        <li>Reminders</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+                <div class="plan">
+                    <h3>pro</h3>
+                    <p><span>$9</span>/month</p>
+                    <ul>
+                        <li>All Free features</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <button>Upgrade</button>
+                </div>
+                <div class="plan">
+                    <h3>Team</h3>
+                    <p><span>$25</span>/month</p>
+                    <ul>
+                        <li>All Pro features</li>
+                        <li>Team collaboration</li>
+                        <li>Admin controls</li>
+                    </ul>
+                    <button>Try Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <!-- Brand -->
+            <div class="brand">
+              <h3>TaskFlow</h3>
+              <p>Simplify your day, boost your productivity.</p>
+            </div>
+        
+            <!-- Quick Links -->
+            <div class="links">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#features" target="_self">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#choosePlan">Pricing</a></li>
+              </ul>
+            </div>
+        
+            <!-- Contact -->
+            <div class="footer-contact">
+              <h4>Contact</h4>
+              <p>Email: support@taskflow.com</p>
+              <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        
+            <!-- Social -->
+            <div class="footer-socials">
+              <h4>Follow Us</h4>
+              <a href="#"><svg fill="#fff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"></path> </g></svg></a>
+              <a href="#"><svg fill="#ffff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#ffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M215.2,361.2 c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"></path> </g></svg></a>
+              <a href="#"><svg fill="#fff" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path> </g></svg></a>
+            </div>
+          </div>
+        
+          <div class="footer-bottom">
+            <p>© 2025 TaskFlow. All rights reserved.</p>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

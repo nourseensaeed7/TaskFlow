@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+/* header */
+header{
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg ,#4FACFE ,#00F2FE);
+    color: white;
+    padding: 40px 0;
+     h1 {
+        font-size: 3.5rem;         
+        font-weight: 700;          
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      }
+      
+    P{
+        font-size: larger;
+    }
+    button{
+        width: 10em;
+        height: 3em;
+        font-size: large;
+        font-weight: 700;
+        background-color: white;
+        border: 0;
+        border-radius: 40px;
+        margin: 20px;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+    button:hover{
+        box-shadow:1px 1px 5px 10px #4facfe54;
+    }
+}
+/* features */
+.features_section{
+    text-align: center;
+    margin: 1em;
+    h2{
+        padding: 1em;
+    }
+}
+.features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature{
+    width: 15em;
+    h3{
+        text-transform: capitalize;
+    }
+}
+/* users say */
+.usersSay{
+    margin: 2em 1em;
+    h2{
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+.reviews{
+    display: flex;
+    justify-content: space-evenly;
+}
+.review{
+    width: 15em;
+    border: 1px solid rgba(128, 128, 128, 0.201) ;
+    box-shadow: 1px 1px 7px rgba(128, 128, 128, 0.562);
+    border-radius: 10px;
+    margin: 1em 0 1em 1em;
+    padding: 0 20px;
+    p{
+        font-size: 1.15rem;
+    }
+}
+/* choose plan */
+.choosePlan{
+    /* margin: 5em 0; */
+    padding: 2em 0;
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+.plans{
+    display: flex;
+    justify-content: space-evenly;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    margin: 1em;
+    /* padding: 2em; */
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    h3{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2em;
+    }
+    p{
+        text-align: center;
+        span{
+            font-size: 2em;
+        }  
+    }
+    button{
+        height: 3em;
+        font-size: 1em;
+        border: 0;
+        border-radius: 40px;
+        padding:  0 30px;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+        margin: 1em 0;
+    }
+    button:hover{
+        background-color: #4FACFE;
+        color: white;
+    }
+    ul {
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        position: relative;
+        padding-left: 28px;
+        margin: 10px 0;
+    }
+    li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.2rem;
+        color:#4FACFE;
+        transition: all 0.3s ease-in-out;
+    }  
+}
+.plan:hover li::before {
+  content: "✔";
+  color:#4FACFE;
+  transform: scale(1.2) rotate(-10deg);
+}
+  
+.plan:hover{
+    border: 1.5px solid#4FACFE;
+    border-radius: 10px;
+}
+/* Base state (hidden before scroll) */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+  }
+  
+  /* Visible state (when in viewport) */
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  footer{
+    color: white;
+      padding: 10px;
+      background: linear-gradient(-190deg  ,#00F2FE ,#4FACFE);
+  } 
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer div{
+    width: fit-content;
+  }
+  .links>ul>li>a{
+    color: white;
+  }
+  @media(max-width:500px){
+    .features,.reviews,.plans{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
