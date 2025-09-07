@@ -31,12 +31,6 @@ This project showcases a clean design with smooth animations and responsive layo
 
 ---
 
-## 🔥 Preview
-
-👉 *(If hosted, put your live link here — for example, GitHub Pages or Netlify)*  
-
----
-
 ## 📂 Project Structure
 
 # TaskFlow – Organize Your Tasks Easily ✅
